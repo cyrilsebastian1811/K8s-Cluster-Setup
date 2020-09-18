@@ -10,11 +10,15 @@
 # k8s
 
 <!-- Deployment Setup -->
-ansible-playbook deploy-app.yaml -i production --extra-vars="db_username=team db_password=Qwerty123 rds_endpoint=<rds_endpoint> dockerhub_username=cyrilsebastian1811 dockerhub_password=Onepiece181195@ dockerhub_email=sebastian.c@northeastern.edu ui_image=frontend api_image=backend"
+```
+ansible-playbook deploy-app.yaml -i production --extra-vars="db_username=team db_password=Qwerty123 rds_endpoint=<rds_endpoint> dockerhub_username=cyrilsebastian1811 dockerhub_password=xxxxxxxxxxxxx dockerhub_email=a@a.com ui_image=frontend api_image=backend"
+```
 
 <!-- Deployment Pull Down -->
+```
 kubectl delete namespace ui
 kubectl delete namespace api
+```
 
 
 <!-- Infrastructure Setup -->
